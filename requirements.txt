@@ -1,0 +1,14 @@
+# Core pipeline dependencies
+torch>=2.0
+torchvision>=0.15
+scikit-image>=0.21
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+pillow>=10.0
+pytest>=7.4
+
+# Task 1 / 2 / 4 — local LLM access via Ollama
+# Install Ollama itself separately from https://ollama.com (not a pip package),
+# then: ollama pull qwen2.5vl  and   ollama pull llama3.2
+ollama>=0.3.0

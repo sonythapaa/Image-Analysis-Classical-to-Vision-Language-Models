@@ -1,0 +1,13 @@
+image_id,density,n_objects_ground_truth,n_objects_measured,undercount,undercount_pct
+test_005,clustered,49,15,34,69.4
+test_010,dense,78,36,42,53.8
+test_004,dense,75,42,33,44.0
+test_011,clustered,30,20,10,33.3
+test_001,normal,19,14,5,26.3
+test_007,normal,30,23,7,23.3
+test_008,normal,28,23,5,17.9
+test_002,normal,31,26,5,16.1
+test_009,normal,24,21,3,12.5
+test_003,normal,21,19,2,9.5
+test_000,sparse,8,8,0,0.0
+test_006,sparse,8,8,0,0.0

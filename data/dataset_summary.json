@@ -1,0 +1,14 @@
+{
+  "images_total": 112,
+  "splits": {
+    "train": 80,
+    "val": 20,
+    "test": 12
+  },
+  "image_size": [
+    256,
+    256
+  ],
+  "channels": 3,
+  "mask_encoding": "binary png (0/255); instance labels in /labels (16-bit)"
+}

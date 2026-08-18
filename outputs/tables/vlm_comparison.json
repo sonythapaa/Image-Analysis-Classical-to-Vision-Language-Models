@@ -1,0 +1,18 @@
+{
+  "naive_prompt": "Describe this image.",
+  "naive_output": "The image appears to be a microscopic view of cells, likely stained with a fluorescent dye to visualize the cell nuclei or another cellular component. The cells are predominantly blue and are scattered across a dark background, which is typical for fluorescence microscopy images. The blue fluorescence suggests that the cells may have been stained with a dye like DAPI (4',6-diamidino-2-phenylindole), which is commonly used to stain the nuclei of cells in order to visualize their shape and distribution. The image does not show any specific structural details or characteristics that would immediately identify the type of cells or the biological context in which they were obtained.",
+  "structured_prompt": "You are assisting with an EDUCATIONAL image-description\nexercise. You are NOT a clinician and this is NOT a diagnostic exercise.\n\nDescribe what is visually present in this microscopy image. Do not diagnose,\ndo not name a disease, and do not guess at anything you cannot see directly\nin the pixels (e.g. never guess patient age, sex, or clinical history).\n\nIf you are unsure about any attribute, write \"uncertain\" for that field\nrather than guessing.\n\nReturn your answer as a single valid JSON object with EXACTLY these keys,\nand nothing else before or after the JSON:\n{\n  \"modality\": \"<imaging modality you can infer, or 'uncertain'>\",\n  \"tissue_type\": \"<what kind of tissue/sample this looks like, or 'uncertain'>\",\n  \"notable_features\": \"<one sentence on what stands out visually>\",\n  \"image_quality\": \"<one of: good, fair, poor, uncertain>\"\n}\n",
+  "structured_output_raw": "{\n  \"modality\": \"fluorescence microscopy\",\n  \"tissue_type\": \"uncertain\",\n  \"notable_features\": \"The image shows numerous blue fluorescent spots scattered across a dark background, suggesting a cellular or biological sample.\",\n  \"image_quality\": \"good\"\n}",
+  "structured_output_json": {
+    "modality": "fluorescence microscopy",
+    "tissue_type": "uncertain",
+    "notable_features": "The image shows numerous blue fluorescent spots scattered across a dark background, suggesting a cellular or biological sample.",
+    "image_quality": "good"
+  },
+  "variability_check_n3": [
+    "{\n  \"modality\": \"fluorescence microscopy\",\n  \"tissue_type\": \"uncertain\",\n  \"notable_features\": \"numerous bright blue fluorescent spots scattered across a dark background\",\n  \"image_quality\": \"good\"\n}",
+    "{\n  \"modality\": \"fluorescence microscopy\",\n  \"tissue_type\": \"uncertain\",\n  \"notable_features\": \"The image displays numerous blue-stained, irregularly shaped structures scattered across a dark background.\",\n  \"image_quality\": \"good\"\n}",
+    "{\n  \"modality\": \"fluorescence microscopy\",\n  \"tissue_type\": \"uncertain\",\n  \"notable_features\": \"The image shows numerous bright blue-fluorescent structures scattered against a dark background, resembling cellular nuclei or another cellular component.\",\n  \"image_quality\": \"good\"\n}"
+  ],
+  "variability_all_identical": false
+}
